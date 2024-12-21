@@ -18,6 +18,9 @@ keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "Save changes in all files" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- quit nvim
+keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Quit nvim" })
+
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
 keymap.set({ "n", "v" }, "d", '"_d', { noremap = true })
