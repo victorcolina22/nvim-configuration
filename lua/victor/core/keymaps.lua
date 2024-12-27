@@ -48,3 +48,7 @@ keymap.set("n", "<S-l>", "<cmd>tabn<CR>", { desc = "Go to next tab" }) -- go to 
 keymap.set("n", "<S-h>", "<cmd>tabp<CR>", { desc = "Go to next tab" }) -- go to previous tab
 
 keymap.set("n", "<leader>ml", "<C-v>", { desc = "Insert the same characters across multiple lines" }) -- insert the same characters across multiple lines
+
+-- px to rem
+keymap.set("n", "<leader>pxx", ":PxToRemCursor<CR>", { noremap = true })
+keymap.set("n", "<leader>pxl", ":PxToRemLine<CR>", { noremap = true })
