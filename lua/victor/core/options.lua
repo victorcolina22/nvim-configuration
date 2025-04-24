@@ -6,7 +6,7 @@ vim.scriptencoding = "utf-8"
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
 
-opt.relativenumber = false
+opt.relativenumber = true
 opt.number = true
 
 -- Tabs & Indentation
