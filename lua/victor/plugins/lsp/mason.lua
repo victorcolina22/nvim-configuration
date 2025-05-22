@@ -39,6 +39,10 @@ return {
 				"pyright",
 				"astro",
 			},
+			automatic_installation = true,
+			-- Desactiva la habilitación automática ya que lo hacemos manualmente en lspconfig.lua
+			-- automatic_setup = true,
+			automatic_enable = true,
 		})
 
 		mason_tool_installer.setup({
