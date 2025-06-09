@@ -24,8 +24,12 @@ return {
 				inc_rename = false, -- enables an input dialog for inc-rename.nvim
 				lsp_doc_border = false, -- add a border to hover docs and signature help
 			},
+			throttle = 1000 / 30, -- Reduce updates frequency
 			messages = {
 				view = false,
+			},
+			cmdline = {
+				view = "cmdline", -- Lighter than popup
 			},
 		})
 	end,

@@ -13,16 +13,14 @@ return {
 		treesitter.setup({ -- enable syntax highlighting
 			highlight = {
 				enable = true,
+				additional_vim_regex_highlighting = false, -- for better performance
 			},
 			-- enable indentation
 			indent = { enable = true },
 			-- auto install missing parsers
-			auto_install = true,
+			auto_install = false,
 			-- ensure these language parsers are installed
 			ensure_installed = {
-				"bash",
-				"c",
-				"diff",
 				"html",
 				"javascript",
 				"jsdoc",
@@ -33,11 +31,7 @@ return {
 				"luap",
 				"markdown",
 				"markdown_inline",
-				"printf",
 				"python",
-				"query",
-				"regex",
-				"toml",
 				"tsx",
 				"typescript",
 				"vim",
@@ -48,8 +42,6 @@ return {
 				"css",
 				"scss",
 				"svelte",
-				"prisma",
-				"graphql",
 				"sql",
 				"dockerfile",
 				"gitignore",
