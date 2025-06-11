@@ -32,5 +32,12 @@ return {
 				view = "cmdline", -- Lighter than popup
 			},
 		})
+
+		vim.keymap.set("n", "<leader>hi", function()
+			require("notify").dismiss({
+				pending = false,
+				silent = true,
+			})
+		end, { desc = "Dismiss noice notifications" })
 	end,
 }
