@@ -7,7 +7,7 @@ opt.updatetime = 250 -- Faster completion (default 4000ms)
 opt.timeoutlen = 300 -- Faster key sequence completion
 opt.redrawtime = 10000 -- Increase redraw time for complex syntax
 opt.synmaxcol = 240 -- Limit syntax highlighting for long lines
-opt.lazyredraw = true -- Don't redraw during macros
+-- opt.lazyredraw = true -- Don't redraw during macros
 opt.ttyfast = true -- Faster terminal connection
 
 -- Memory improvements
