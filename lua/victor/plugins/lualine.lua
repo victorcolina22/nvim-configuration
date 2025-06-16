@@ -3,6 +3,7 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local lualine = require("lualine")
+		local lazy_status = require("lazy.status")
 		local icon = {
 			kind = {
 				Codeium = "",
@@ -141,6 +142,12 @@ return {
 			always_visible = false,
 		}
 
+		local lazy_updates = {
+			lazy_status.updates,
+			cond = lazy_status.has_updates,
+			color = { fg = "#ff9e64" },
+		}
+
 		lualine.setup({
 			options = {
 				theme = "auto",
@@ -153,7 +160,7 @@ return {
 				lualine_a = { "mode" },
 				lualine_b = {},
 				lualine_c = { "filename", lsp_status, "codecompanion", "supermaven" },
-				lualine_x = { { "branch", icon = icon.git.Branch }, diff, diagnostics, filetype },
+				lualine_x = { lazy_updates, { "branch", icon = icon.git.Branch }, diff, diagnostics, filetype },
 				lualine_y = {},
 				lualine_z = {},
 			},
