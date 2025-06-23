@@ -56,5 +56,8 @@ opt.swapfile = false
 -- mouse hover event
 opt.mousemoveevent = true
 
+-- Avante plugin recommended opt
+vim.opt.laststatus = 3
+
 -- spacebar leader key
 vim.g.mapleader = " "
