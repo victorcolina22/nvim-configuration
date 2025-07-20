@@ -67,6 +67,12 @@ return {
 			end,
 		})
 
+		vim.diagnostic.config({
+			virtual_lines = true,
+			-- virtual_text = true,
+			-- underline = true,
+		})
+
 		vim.lsp.set_log_level("WARN") -- reduce logging
 
 		-- used to enable autocompletion (assign to every lsp server config)
